@@ -16,8 +16,8 @@ RUN pip3.7 install -r requirements.txt -i https://mirror.baidu.com/pypi/simple
 RUN mkdir -p /PaddleOCR/train_data/
 
 # 下载数据
-ADD https://paddleocr.bj.bcebos.com/ppstructure/dataset/XFUND.tar /PaddleOCR/train_data/
-RUN tar xf /PaddleOCR/train_data/XFUND.tar -C /PaddleOCR/train_data
+# ADD https://paddleocr.bj.bcebos.com/ppstructure/dataset/XFUND.tar /PaddleOCR/train_data/
+# RUN tar xf /PaddleOCR/train_data/XFUND.tar -C /PaddleOCR/train_data
 
 RUN mkdir -p /PaddleOCR/inference/
 
