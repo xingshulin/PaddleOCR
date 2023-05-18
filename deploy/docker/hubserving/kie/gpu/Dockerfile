@@ -7,8 +7,6 @@ WORKDIR /PaddleOCR
 
 COPY . /PaddleOCR
 
-RUN pwd && ls -al
-
 RUN pip3.7 install --upgrade pip 
 
 RUN pip3.7 install paddlehub --upgrade 
