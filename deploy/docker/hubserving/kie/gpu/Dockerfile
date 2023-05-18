@@ -5,13 +5,13 @@ FROM paddlepaddle/paddle:2.4.2-gpu-cuda11.2-cudnn8.2-trt8.0
 
 WORKDIR /PaddleOCR
 
-COPY . /PaddleOCR/
+COPY ../../../../../ /PaddleOCR
 
-RUN pip3.7 install --upgrade pip -i https://mirror.baidu.com/pypi/simple
+RUN pip3.7 install --upgrade pip 
 
-RUN pip3.7 install paddlehub --upgrade -i https://mirror.baidu.com/pypi/simple
+RUN pip3.7 install paddlehub --upgrade 
 
-RUN pip3.7 install -r requirements.txt -i https://mirror.baidu.com/pypi/simple
+RUN pip3.7 install -r requirements.txt
 
 RUN mkdir -p /PaddleOCR/train_data/
 
