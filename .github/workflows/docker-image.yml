@@ -38,6 +38,7 @@ jobs:
     - name: build and push
       uses: docker/build-push-action@v4
       with:
-        context: ./deploy/docker/hubserving/kie/gpu/
+        context: .
+        file: ./deploy/docker/hubserving/kie/gpu/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_REPO_HOST }}/ppocr:latest

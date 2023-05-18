@@ -5,7 +5,7 @@ FROM paddlepaddle/paddle:2.4.2-gpu-cuda11.2-cudnn8.2-trt8.0
 
 WORKDIR /PaddleOCR
 
-COPY ../../../../../ /PaddleOCR
+COPY . /PaddleOCR
 
 RUN pwd && ls -al
 
