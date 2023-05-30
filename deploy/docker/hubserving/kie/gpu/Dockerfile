@@ -13,9 +13,6 @@ RUN pip3.7 install paddlehub --upgrade
 
 RUN pip3.7 install -r requirements.txt
 
-RUN mkdir -p /PaddleOCR/train_data/
-
-RUN mkdir -p /PaddleOCR/inference/
 
 # # 下载数据
 # ADD https://paddleocr.bj.bcebos.com/ppstructure/dataset/XFUND.tar /PaddleOCR/train_data/
